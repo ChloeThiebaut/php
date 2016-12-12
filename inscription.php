@@ -1,10 +1,10 @@
-<!--<?php 
-    /*if(isseet($_GET['error'])){
-        echo"login deja pris";*/
-    }
-?> -->
-
 <?php session_start();?>
+
+<?php 
+    if(isset($_GET['error'])){
+        echo"login deja pris";
+    }
+?>
 
 <form method="Post" action="insertion.php">
     <label for="login"> login</label>
