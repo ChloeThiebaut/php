@@ -7,11 +7,11 @@
  $reponse=$cle->query("SELECT * FROM users WHERE login='$login'");
 
 if($reponse->num_rows==1){
-            header("Location:inscription.php");
-}
+    header("Location:inscription.php?error");
+        }
 else {
-        $reponse2=$cle->query("INSERT INTO users (login, mdp) VALUES ('$login' ,'$mdp')");
-        header("Location:formulaire.php");
+      $reponse2=$cle->query("INSERT INTO users (login, mdp) VALUES ('$login' ,'$mdp')");
+       header("Location:formulaire.php");
     }
 
 ?>
