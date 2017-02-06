@@ -3,65 +3,84 @@
   <head>
     <meta charset="UTF-8">
     <title>Ptut</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styl.css">
   </head>
     
     <body>
-        <header>
-           <img src="img/voile.jpg" alt="header" id="header">
-       
-        <nav>
-            <ul>
-                <li><a href="#acueil">Accueil</a></li>
-                <li><a>Actualité</a></li>
-                <li><a>Naviguer</a></li>
-                <li><a>Equipe</a></li>                
-                <li><a>Contact</a></li>                
-            </ul>
-        </nav>
+        <div class="container">
+        <header class="row">
+            <div class="page-header">
+              <h1>CVSAE<small> Club de voile de Saint Aubin</small></h1>
+            </div>
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Brand</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Accueil<span class="sr-only"></span></a></li>
+                      
+                    <li><a href="#">Actualité</a></li>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Présentation</a></li>
+                        <li><a href="#">Activité</a></li>
+                        <li><a href="#">Equipe</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    <li><a href="#">Naviguer</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                 
+                  <ul class="nav navbar-nav navbar-right">
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                       <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <li><a href="#">connexion</a></li>
+                    <li><a href="#">s'inscrire</a></li>
+                  </ul>
+                  
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+          <!--  <img src="css/img/voile.jpg" class="col-lg-12 header"> -->
+            
         </header>
         
-       <div id="contenu">
-		<article>
-			<img src="img/bateau.jpg" alt="logo">
-			<h2>Le Club de Voile 	</h2>
-			<p>Le Club de Voile de Saint-Aubin lès Elbeuf est un des clubs sportifs de niveau national les plus représentatifs de l’ex Agglo d’Elbeuf 
-			mais rayonne sur l’ensemble du territoire de LA CREA. Le CVSAE est classé en division 1 nationale. Fondé en 1975, le Club de Voile de Saint 
-			Aubin les Elbeuf est une association loi 1901, labellisée Ecole Française de Voile depuis 2002.
-			</p>
-		</article>
-		
-		<article>
-			<img src="img/bateau.jpg" alt="logo">
-			<h2>L’école de Voile</h2>
-			<p>L’école de Voile estivale s’organise par stage de 5 jours pour les individuels et pour les groupes (sur Optimist, sur Catamaran et sur Planche
-			à voile). Pour les adultes débutants, nous proposons une formation sous forme de stages organisé régulièrement par nos moniteurs. </p>
-		</article>
-		
-		<article>
-			<img src="img/bateau.jpg" alt="logo">
-			<h2>Club sportif </h2>
-			<p>La section sportive du CVSAE s’est fortement développée depuis 2003 (mise en place d’un projet de développement sportif). Aujourd’hui, ce ne sont 
-			pas moins de 250 entraînements proposés par an. Les bateaux mis à disposition sont des 420, L’EQUIPE, LASER et OPTIMIST. Le CVSAE organise 7 régates 
-			officielles inscrites au calendrier fédéral. </p>
-		</article>
-	   
-           <section>
-               <h2>  Naviguer</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus felis vitae arcu sollicitudin tincidunt. Etiam in sem finibus, pellentesque mauris vel, vestibulum lectus. Etiam sagittis cursus tortor vel aliquet. Aenean ipsum sem, pharetra eu sagittis nec, bibendum et erat. Sed tincidunt ex non odio consequat facilisis. Quisque facilisis augue id neque pretium, nec posuere risus sodales. Donec in mauris nisl. Maecenas vitae condimentum mi. </p>
-           </section>
-	</div>
-
-	<footer>
-		<a id="site" href="">Lien vers d'autre site</a> 
-		<a id="meteo" href=""><img src="" alt="meteo"></a> 
-		
-		<a id="twitter" href=""><img src="" alt="twitter"></a> 
-		<a id="youtube" href=""><img src="" alt="youtube"></a> 
-		<a id="fb" href=""><img src="" alt="fb"></a> 
-		
-		<a id="contact" href=""><img src="" alt="contact">contact</a> 
-		<a id="mt" href=""><img src="" alt="mention legale">mention legale</a> 
-		<a id="plan" href=""><img src="" alt="plan du site">plan du site</a> 
-	</footer>
+        
+            <div id="content" class="row">
+                <div id="pres" class="col-lg-7">
+                    <h1>Presentation</h1>
+                    <p>Le Club de Voile de Saint-Aubin lès Elbeuf est un des clubs sportifs de niveau national les plus représentatifs de l’ex Agglo d’Elbeuf mais rayonne sur l’ensemble du territoire de LA CREA. Le CVSAE est classé en division 1 nationale. Fondé en 1975, le Club de Voile de Saint Aubin les Elbeuf est une association loi 1901, labellisée Ecole Française de Voile depuis 2002. Depuis maintenant plus de 6 ans, le CVSAE est en plein développement dans différents secteurs (voile loisir, voile à l’école, voile sportive, habitable etc…). L’activité et les licenciés au club ne cessent d’augmenter année après année. La dynamique instaurée a fait du CVSAE un club reconnu, lui permettant entre autres de devenir le gestionnaire de la Base de Loisirs de Bédanne depuis 2002.</p>
+                </div>
+                <img src="css/img/photopres.jpg" class="col-lg-5">
+            
+            <div id="activité" class="col-lg-7">
+                    <h1>Activité</h1>
+                    <p>L’école de Voile estivale s’organise par stage de 5 jours pour les individuels et pour les groupes (sur Optimist, sur Catamaran et sur Planche à voile). Pour les adultes débutants, nous proposons une formation sous forme de stages organisé régulièrement par nos moniteur.</p>
+                </div>
+                <img src="css/img/photopres.jpg" class="col-lg-5">
+            </div>
+        </div>
+    </body>
+    <footer>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </footer>
 </html>
+        
+      
